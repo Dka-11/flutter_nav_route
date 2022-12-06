@@ -5,6 +5,13 @@ class ItemPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Item Page"),
+      ),
+      body: const Center(
+        child: Text("This is new Page"),
+      ),
+    );
   }
 }
