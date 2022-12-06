@@ -1,7 +1,15 @@
+import 'package:belanja/pages/home_page.dart';
+import 'package:belanja/pages/item_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    initialRoute: '/',
+    routes: {
+      '/': (context) => const HomePage(),
+      '/item': (context) => const ItemPage(),
+    },
+  ));
 }
 
 class MyApp extends StatelessWidget {
