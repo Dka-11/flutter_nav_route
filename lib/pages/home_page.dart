@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
             return InkWell(
               // InkWell memberikan efek ditekan.
               onTap: () {
-                Navigator.pushNamed(context, '/item');
+                Navigator.pushNamed(context, '/item', arguments: item);
               },
               child: Card(
                 child: Container(
