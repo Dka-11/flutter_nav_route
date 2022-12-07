@@ -9,7 +9,7 @@ class ItemPage extends StatelessWidget {
     final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Item Page"),
+          title: Text("${itemArgs.name} Page"),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
